@@ -1,7 +1,21 @@
 # You may need to manually set your language environment
 export LANG="en_US.UTF-8"
 
-# export LANG="en_US.UTF-8"
+export ALIEN_THEME="blue"
+
+source /home/kel/.Other/antigen.zsh
+
+# Load the oh-my-zsh library
+antigen use oh-my-zsh
+
+# Load the theme
+antigen theme eendroroy/alien alien
+
+# Syntax highlighting bundle
+antigen bundle zsh-users/zsh-syntax-highlighting
+
+# Tell Antigen that you're done.
+antigen apply
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
@@ -12,7 +26,7 @@ export ZSH=/home/kel/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="powerlevel9k/powerlevel9k"
+# ZSH_THEME="eendroroy/alien"
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
