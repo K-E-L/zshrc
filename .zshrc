@@ -1,7 +1,7 @@
 # You may need to manually set your language environment
 export LANG="en_US.UTF-8"
 
-export ALIEN_THEME="blue"
+export ALIEN_THEME="soft"
 
 source /home/kel/.Other/antigen.zsh
 
