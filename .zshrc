@@ -1,9 +1,9 @@
 # You may need to manually set your language environment
 export LANG="en_US.UTF-8"
 
-export ALIEN_THEME="soft"
+export ALIEN_THEME="blue"
 
-source /home/kel/.Other/antigen.zsh
+source /Users/dillonching/.Other/antigen.zsh
 
 # Load the oh-my-zsh library
 antigen use oh-my-zsh
@@ -14,6 +14,9 @@ antigen theme eendroroy/alien alien
 # Syntax highlighting bundle
 antigen bundle zsh-users/zsh-syntax-highlighting
 
+# Autosuggestions
+antigen bundle zsh-users/zsh-autosuggestions
+
 # Tell Antigen that you're done.
 antigen apply
 
@@ -21,7 +24,7 @@ antigen apply
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/home/kel/.oh-my-zsh
+export ZSH=/Users/dillonching/.oh-my-zsh
 
 # Path for laravel
 export PATH="$PATH:$HOME/.config/composer/vendor/bin"
@@ -82,7 +85,6 @@ COMPLETION_WAITING_DOTS="true"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
     git
-    zsh-completions
     extract
 )
 
@@ -93,7 +95,6 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
-
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
@@ -118,6 +119,3 @@ export EDITOR='emacs'
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-# Autosuggestions
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
