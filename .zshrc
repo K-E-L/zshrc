@@ -119,3 +119,20 @@ export EDITOR='emacs'
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+#
+
+alias nrw="npm run watch"
+alias nrp="npm run production"
+alias nrd="npm run dev"
+alias nri="npm run ios"
+alias nra="npm run android"
+
+alias pas="php artisan serve"
+
+alias python="python3"
+
+export PATH=$PATH:$HOME/.composer/vendor/bin
+
+export NVM_DIR="$HOME/.nvm"
+  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
