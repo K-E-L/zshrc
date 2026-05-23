@@ -5,6 +5,9 @@ export ALIEN_THEME="blue"
 
 source /Users/dillonching/.Other/antigen.zsh
 
+# Load the oh-my-zsh library
+antigen use oh-my-zsh
+
 # Load the theme
 antigen theme eendroroy/alien alien
 
@@ -19,6 +22,9 @@ antigen apply
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
+
+# Path to your oh-my-zsh installation.
+export ZSH=/Users/dillonching/.oh-my-zsh
 
 # Path for laravel
 export PATH="$PATH:$HOME/.config/composer/vendor/bin"
@@ -83,6 +89,8 @@ plugins=(
 )
 
 autoload -U compinit && compinit
+
+source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
